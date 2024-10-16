@@ -23,6 +23,9 @@ USER django_user
 # Copy the entire project into the working directory
 COPY --chown=django_user:django_user . .
 
+# Ensure entrypoint.sh is executable
+RUN chmod +x /app/entrypoint.sh
+
 # Install Python dependencies including Gunicorn
 RUN pip install --no-cache-dir -r requirements.txt \
     && pip install --no-cache-dir gunicorn
