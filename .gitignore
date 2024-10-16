@@ -1,0 +1,58 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+myenv/
+.env
+
+# Django-related
+*.log
+*.pot
+*.pyc
+*.so
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+node_modules/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*~
+*.sublime-workspace
+*.sublime-project
+
+# Django migrations
+**/migrations/*
+
+# Local environment variables
+.env
+.env.*
+
+# macOS-specific files
+.DS_Store
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+
+# Coverage reports
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Testing
+test-results/
+junit/
+
+# Docker
+*.dockerignore
+docker-compose.yml
